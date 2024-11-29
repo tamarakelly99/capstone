@@ -1,0 +1,166 @@
+body {
+
+    margin: 0;
+    font-family: papyrus;
+}
+
+h1:hover {
+    filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
+    transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
+    transition: transform 1s; /* This causes the transformation to last 1 second */
+}
+q {
+    font-style: italic;
+    font-size: large;  
+}
+.background {
+    position: fixed;
+    right: 0;
+    bottom: 0; 
+    min-width: 100%;
+    z-index: -1; 
+}
+h3 {
+    font-family: "Yuji Mai";
+    color: #B126B6;
+}
+
+
+.main {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 97%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid green;
+   /* background-color: grey;*/
+    opacity: 100%;
+    display: flex;
+    border-top: solid grey;
+    border-bottom: solid grey;
+}
+.intro {
+   /* background-color: white; */
+  /*  width: 80%; */
+    border-bottom: solid grey;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    text-align: center;
+    /* opacity: 50%; */
+    padding-top: 1.2%; 
+    padding-bottom: 1%;
+  /*  margin-top: 27px; */
+  /*  margin-bottom: 30px;*/
+  /*  border: solid; */
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+@keyframes moveVideoText {
+    from {top: -100vw;} /*This sets the position of the video text to above the viewport */
+    to {top: 0vw;} /*This moves the video text to the normal positioning on the viewport */
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    filter: grayscale(60%);
+    border: solid green;
+    
+}
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    border-bottom: solid green;
+    position: inline;
+    -webkit-animation: moveNav 5s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
+    animation: moveNav 5s; /* This applies the moveNav animation for all other browsers */
+}
+@keyframes moveNav {
+    from {left: -100vw;} /* The navbar is starting off screen to the left */
+    to {left: 0vw;} /* This moves the navbar into place on the screen */
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: grey;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    font-family:Avant Garde, Helvetica; 
+    } 
+.navbar a:hover {
+    background-color: #1a1a1a;
+    color: pink;
+}
+a.active {
+    background-color: #1a1a1a;
+    color: white;
+    
+}
+.col1 {
+    float: left;
+    width: 50%; /* This ensures the column takes up half of the page width */
+    padding: 10px;
+    padding-top:1.9%; /* This ensures there is space between the top of the column and our headings */
+    height: 320px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    background-color:black;/* Sets the background color of the columns with class Column_1 */
+    
+}
+@media screen and (max-width: 576px) {
+    .Col1 {
+        overflow: auto;
+    }
+}
+.col2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 320px;
+    background-color: rgb(108, 144, 108);
+}
+
+.main p{
+    padding-left: 70px; /* Adds padding to the left of the paragraph element */
+    padding-right: 70px; /* Adds padding to the right of the paragraph element */
+    font-size: 18px;
+}
+footer {
+    background-color: #1a1a1a;
+    width: 100%;
+    margin: auto;
+    border-top: solid green;
+}
+footer p {
+    display: inline-block;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    color: rgb(124, 190, 124);
+}
+
+.lists {
+    background-color: rgb(50, 90, 50);
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.list-1 {
+    margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px; }
